@@ -2,6 +2,7 @@
   font-family: $montserrat-medium;
   font-size: 12px;
   line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .main-header__wrapper {
@@ -29,6 +30,10 @@
 .main-header__logo {
   display: flex;
   align-items: center;
+}
+
+.main-header__logo-icon {
+  margin-top: 3px;
 }
 
 .main-header__logo-slogan {

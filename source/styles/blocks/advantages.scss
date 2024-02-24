@@ -1,0 +1,126 @@
+.advantages__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 50px 20px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1400px;
+    padding: 0 40px;
+  }
+}
+
+.advantages__bage {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  list-style: none;
+  row-gap: 32px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 339px);
+    gap: 50px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 318px);
+  }
+}
+
+.advantages__item {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -1px;
+      left: 0;
+    }
+  }
+
+  &--speed::before {
+    background: url("../../images/icons/stack.svg#icon-speed");
+    width: 50px;
+    height: 56px;
+    top: 3px;
+    left: 11px;
+  }
+
+  &--convenience::before {
+    background-image: url("../../images/icons/stack.svg#icon-convenience");
+    width: 52px;
+    height: 56px;
+    left: 10px;
+  }
+
+  &--cheerfulness::before {
+    background-image: url("../../images/icons/stack.svg#icon-cheerfulness");
+    width: 42px;
+    height: 56px;
+    left: 15px;
+  }
+
+  &--ecology::before {
+    background-image: url("../../images/icons/stack.svg#icon-ecology");
+    width: 46px;
+    height: 56px;
+    top: 3px;
+    left: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+    text-align: left;
+  }
+}
+
+.advantages__name {
+  font-family: $montserrat-bold;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__description {
+  font-family: $montserrat-regular;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

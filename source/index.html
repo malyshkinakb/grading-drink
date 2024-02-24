@@ -60,41 +60,46 @@
      <main class="main-container">
        <h1 class="visually-hidden">Напитки с собой</h1>
         <section class="slider">
-          <h2 class="visually-hidden">Слайдер</h2>
           <div class="slider__slide slide">
-            <picture>
-              <source media="(min-width:1200px)" srcset="">
-              <source media="(min-width:768px)" srcset="">
-              <img class="slide__image" src="" alt="">
-            </picture>
-            <div class="slide__text">
-              <p class="slide__bage badge">Новинка!</p>
-              <h2 class="slide__title">Дэкаф флэт уайт</h2>
-              <p class="slide__description"></p>
-              <div class="slider__order">
-                <p class="slide__old-price">295&#8381;</p>
-                <p class="slide__new-price">225&#8381;</p>
-                <button class="slide__button button">Заказать</button>
+            <h2 class="visually-hidden">Слайдер</h2>
+            <div class="slide__wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1400px)" srcset="images/slider/slide-flatwhite-desktop@1x.webp 1x, images/slider/slide-flatwhite-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/slide-flatwhite-tablet@1x.webp 1x, images/slider/slide-flatwhite-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/slider/slide-flatwhite-mobile@1x.webp 1x, images/slider/slide-flatwhite-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="images/slider/slide-flatwhite-desktop@1x.png 1x, images/slider/slide-flatwhite-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="images/slider/slide-flatwhite-tablet@1x.png 1x, images/slider/slide-flatwhite-tablet@2x.png 2x">
+                <img class="slide__image" src="images/slider/slide-flatwhite-mobile@1x.png" srcset="images/slider/slide-flatwhite-mobile@2x.png 2x" width="280"; height="280"; alt="Кофе Декаф Флэт Уайт.">
+              </picture>
+              <div class="slide__text">
+                <span class="slide__bage bage">Новинка!</span>
+                <h2 class="slide__title">Декаф Флэт Уайт</h2>
+                <p class="slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="slide__order">
+                  <span class="slide__old-price">295&#8381;</span>
+                  <span class="slide__new-price">225&#8381;</span>
+                  <a class="slide__button button" href="#">Заказать</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slider__control control-slide">
-            <button class="control-slide__button" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="control-slide__button" type="button">
-              <span class="visually-hidden">Следущий слайд</span>
-            </button>
+            <!--<div class="slider__control slide-control">
+              <button class="slide-control__button" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="slide-control__button slide-control__button--next" type="button">
+                <span class="visually-hidden">Следущий слайд</span>
+              </button>
+            </div>-->
           </div>
         </section>
         <section class="advantages">
           <div class="advantages__wrapper">
-            <p class="advantages__bage bage">Преимущества</p>
+            <span class="advantages__bage bage">Преимущества</span>
             <h2 class="advantages__title title">Главные причины выбрать Drink2Go</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--speed">
                 <h3 class="advantages__name">Скорость</h3>
-                <p class="advantages__description">Готовый напиток всегда под рукой - просто открой банку</p>
+                <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
               </li>
               <li class="advantages__item advantages__item--convenience">
                 <h3 class="advantages__name">Удобство</h3>
