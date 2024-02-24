@@ -1,0 +1,30 @@
+.catalog {
+  background-color: #f8f8f8;
+}
+
+.catalog__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 50px 20px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1400px;
+    padding: 0 40px;
+  }
+}
+
+.catalog__bage {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
