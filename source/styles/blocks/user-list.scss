@@ -1,0 +1,49 @@
+.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.user-list__item {
+  display: flex;
+  padding: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+}
+
+.user-list__link {
+  display: flex;
+  color: $color-black-base;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    mask: url("../../images/icons/stack.svg#user");
+    background: $color-black-base;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  &--cart::before {
+    mask: url("../../images/icons/stack.svg#cart");
+  }
+}
+
+.user-list__link-text {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}

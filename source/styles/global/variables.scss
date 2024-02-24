@@ -1,1 +1,18 @@
 /* здесь используйте глобальные переменные */
+
+/* Ширина экранов */
+$mobile-width: 320px;
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$tablet-width-only: 1339px;
+$desktop-width: 1400px;
+
+/* Шрифты */
+$montserrat-regular: "Montserrat Regular", "Arial";
+$montserrat-bold: "Montserrat Bold", "Arial";
+$montserrat-medium: "Montserrat  Medium", "Arial";
+$montserrat-semiBold: "Montserrat SemiBold", "Arial";
+
+/* Цвета */
+$color-black-base: #333333;
+$color-base-primary: #7859cf;

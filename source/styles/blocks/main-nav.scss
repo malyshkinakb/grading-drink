@@ -1,0 +1,28 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav__toogle {
+  padding: 22px;
+  border: none;
+  background-position: center;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toogle::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../images/icons/stack.svg#menu-open");
+}
+
+.main-nav--opened .main-nav__toogle {
+  width: 18px;
+  height: 21px;
+  background-image: url("../../images/icons/stack.svg#menu-open");
+}
