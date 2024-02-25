@@ -1,0 +1,13 @@
+.form-filters__submit {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-filters__button {
+  width: 100%;
+
+  &--reset {
+    background-color: $color-white-base;
+  }
+}

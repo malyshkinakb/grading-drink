@@ -15,7 +15,7 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__logo">
-          <a class="main-header__logo-icon">
+          <a class="main-header__logo-icon" href=#>
             <picture>
               <source media="(min-width:1400px)" srcset="images/logo-desktop.svg" width="170" height="36">
               <source media="(min-width:768px)" srcset="images/logo-tablet.svg"width="82" height="36">
@@ -124,10 +124,10 @@
               <form class="catalog__form-filters form-filters">
                   <ul class="form-filters__submit">
                     <li class="form-filters__item">
-                      <button class="form-filters__button" type="submit">Применить</button>
+                      <button class="form-filters__button button" type="submit">Применить</button>
                     </li>
                     <li class="form-filters__item">
-                      <button class="form-filters__button" type="reset">Сбросиить</button>
+                      <button class="form-filters__button form-filters__button--rest button" type="reset">Сбросиить</button>
                     </li>
                   </ul>
               </form>
@@ -234,9 +234,12 @@
         </section>
         <section class="map">
           <picture>
-            <source media=(min-width:1400px) srcset="">
-            <source media=(min-width:768px) srcset="">
-            <img class="map__image" src="" alt="">
+            <source type="image/webp" media="(min-width: 1400px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+                <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="420" alt="Карта.">
           </picture>
         </section>
      </main>
