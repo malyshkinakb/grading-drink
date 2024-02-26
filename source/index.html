@@ -57,8 +57,8 @@
         </nav>
       </div>
     </header>
-     <main class="main-container">
-       <h1 class="visually-hidden">Напитки с собой</h1>
+    <main class="main-container">
+      <h1 class="visually-hidden">Напитки с собой</h1>
         <section class="slider">
           <div class="slider__slide slide">
             <h2 class="visually-hidden">Слайдер</h2>
@@ -82,14 +82,14 @@
                 </div>
               </div>
             </div>
-            <!--<div class="slider__control slide-control">
-              <button class="slide-control__button" type="button">
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button class="slide-control__button slide-control__button--next" type="button">
-                <span class="visually-hidden">Следущий слайд</span>
-              </button>
-            </div>-->
+          </div>
+          <div class="slider__control slide-control">
+            <button class="slide-control__button" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slide-control__button slide-control__button--next" type="button">
+              <span class="visually-hidden">Следущий слайд</span>
+            </button>
           </div>
         </section>
         <section class="advantages">
@@ -111,7 +111,7 @@
               </li>
               <li class="advantages__item advantages__item--ecology">
                 <h3 class="advantages__name">Экологичность</h3>
-                <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
+                <p class="advantages__description">Вся упаковка сделана<br>из перерабатываемых материалов</p>
               </li>
             </ul>
           </div>
@@ -121,19 +121,95 @@
             <span class="catalog__bage bage">Каталог</span>
             <h2 class="catalog__title title">Каталог кофейных напитков</h2>
             <div class="catalog__container">
-              <form class="catalog__form-filters form-filters">
+              <form class="catalog__form-filters form-filters" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="form-filters__group form-group">
+                  <legend class="form-group__title">Цена</legend>
+                  <div class="form-group__range-slider slider-price" id="slider"></div>
+                  <div class="form-group__range-values">
+                    <label class="form-group__range-label">
+                      <input type="number" class="form-group__range-input" min="0" placeholder="0">
+                    </label>
+                    <label class="filters-price__label">
+                      <input type="number" class="form-group__range-input" max="900" placeholder="900">
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="form-filters__group form-group form-group">
+                  <legend class="form-group__title">Наличие молока</legend>
+                  <ul class="form-group__list">
+                    <li class="form-group__item">
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="radio" name="availability-milk" value="no-matter" checked>
+                        <span class="form-group__control"></span>
+                        <span class="form-group__control-name">Неважно</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="radio" name="availability-milk" value="milk-animal">
+                        <span class="form-group__control"></span>
+                        <span class="form-group__control-name">Только животное</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="radio" name="availability-milk" value="milk-plant">
+                        <span class="form-group__control"></span>
+                        <span class="form-group__control-name">Только растительное</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="radio" name="availability-milk" value="milk-none" disabled>
+                        <span class="form-group__control"></span>
+                        <span class="form-group__control-name">Без молока</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="form-filters__group form-group form-group">
+                  <legend class="form-group__title">Страна произрастания</legend>
+                  <ul class="form-group__list">
+                    <li class="form-group__item">
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="checkbox" name="brazil" checked>
+                        <span class="form-group__control form-group__control--checkbox"></span>
+                        <span class="form-group__control-name">Бразилия</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="checkbox" name="ephiopia">
+                        <span class="form-group__control form-group__control--checkbox"></span>
+                        <span class="form-group__control-name">Эфиопия</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="checkbox" name="columbia" disabled>
+                        <span class="form-group__control form-group__control--checkbox"></span>
+                        <span class="form-group__control-name">Колумбия</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="checkbox" name="kosta-rika" checked disabled>
+                        <span class="form-group__control form-group__control--checkbox"></span>
+                        <span class="form-group__control-name">Коста-Рика</span>
+                      </label>
+                      <label class="form-group__label">
+                        <input class="visually-hidden form-group__input" type="checkbox" name="brazil">
+                        <span class="form-group__control form-group__control--checkbox"></span>
+                        <span class="form-group__control-name">Перу</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
                   <ul class="form-filters__submit">
                     <li class="form-filters__item">
                       <button class="form-filters__button button" type="submit">Применить</button>
                     </li>
                     <li class="form-filters__item">
-                      <button class="form-filters__button form-filters__button--rest button" type="reset">Сбросиить</button>
+                      <button class="form-filters__button button button--reset" type="reset">Сбросить</button>
                     </li>
                   </ul>
               </form>
               <div class="catalog__products products">
-                <div class="products__sort">
-
+                <div class="products__sort sort">
+                  <span class="sort__title">Сортировка:</span>
+                  <label class="sort__label"></label>
+                  <select class="sort__values">
+                    <option class="sort__control" value="default">по умолчанию</option>
+                    <option class="sort__control" value="expensive">сначала дорогие</option>
+                  </select>
                 </div>
                 <ul class="products__list">
                   <li class="products__item product-card">
@@ -210,10 +286,12 @@
                   </li>
                 </ul>
                 <div class="products__pagination pagination">
-                  <a class="pagination__button">
-                    <span>Назад</span>
-                  </a>
                   <ul class="pagination__list">
+                    <li class="pagination__item">
+                      <button class="pagination__button">
+                        <span class="pagination__button__text">Назад</span>
+                      </button>
+                    </li>
                     <li class="pagination__item">
                       <a class="pagination__link" href="#">1</a>
                     </li>
@@ -223,16 +301,17 @@
                     <li class="pagination__item">
                       <a class="pagination__link" href="#">3</a>
                     </li>
+                    <button class="pagination__button">
+                      <span class="pagination__button__text">Вперед</span>
+                    </button>
                   </ul>
-                  <a class="pagination__button">
-                    <span>Вперед</span>
-                  </a>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </section>
         <section class="map">
+          <h2 class="visually-hidden">Карта</h2>
           <picture>
             <source type="image/webp" media="(min-width: 1400px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
@@ -242,39 +321,41 @@
                 <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="420" alt="Карта.">
           </picture>
         </section>
-     </main>
-     <footer class="main-footer">
+    </main>
+    <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <section class="main-footer__social footer-social">
+        <div class="main-footer__social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <a class="footer-social__logo">
-            <picture>
-              <source media="(min-width:1400px)" srcset="" width="170" height="36">
-              <source media="(min-width:768px)" srcset="" width="82" height="36">
-              <img src="" alt="Логотип drink2go" width="32" height="36">
-            </picture>
-          </a>
-          <ul class="footer-social__list social-list">
+          <div class="main-footer__logo">
+            <a href="#">
+              <picture>
+                <source media="(min-width:1400px)" srcset="images/logo-desktop.svg" width="170" height="36">
+                <img src="images/logo-tablet.svg" alt="Логотип drink2go" width="82" height="36">
+              </picture>
+            </a>
+            <p class="main-footer__logo-slogan">Интернет-магазин кофейных напитков</p>
+          </div>
+          <ul class="main-footer__social-list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--vk" href="#">
                 <span class="visually-hidden">Вконтате</span>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--pinterest" href="#">
                 <span class="visually-hidden">Pinterest</span>
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#">
+              <a class="social-list__link social-list__link--ok" href="#">
                 <span class="visually-hidden">Одноклассники</span>
               </a>
             </li>
           </ul>
-        </section>
+        </div>
         <div class="main-footer__nav foter-nav">
           <ul class="foter-nav__list">
-            <h4 class="foter-nav__title">Интернет магазин</h4>
+            <span class="foter-nav__title">Интернет магазин</span>
             <li class="foter-nav__item">
               <a class="foter-nav__link" href="#">Каталог</a>
             </li>
@@ -289,7 +370,7 @@
             </li>
           </ul>
           <ul class="foter-nav__list">
-            <h4 class="foter-nav__title">Медиа</h4>
+            <span class="foter-nav__title">Медиа</span>
             <li class="foter-nav__item">
               <a class="foter-nav__link" href="#">Блог</a>
             </li>
@@ -304,11 +385,20 @@
             </li>
           </ul>
           <address class="foter-nav__contacts contacts">
+            <span class="contacts__title">Контакты</span>
             <p class="contacts__adress">Санкт-Петербург, набережная реки Карповки, дом 5</p>
             <a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
           </address>
         </div>
+        <div class="main-footer__developers developers">
+          <span class="developers__text">Разработано в &nbsp;
+            <a class="developers__link" href="#">HTML Academy</a>
+          </span>
+        </div>
       </div>
-     </footer>
+    </footer>
+
+    <script src="./vendor/nouislider/nouislider.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

@@ -1,13 +1,27 @@
+.form-filters {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 223px 223px 223px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .form-filters__submit {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .form-filters__button {
   width: 100%;
-
-  &--reset {
-    background-color: $color-white-base;
-  }
 }
+

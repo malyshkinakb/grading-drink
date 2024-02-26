@@ -20,6 +20,9 @@
 @import "./blocks/title.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/form-filters.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/slider-price.scss";
+@import "./blocks/sort.scss";
 @import "./blocks/products.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/pagination.scss";
@@ -29,3 +32,7 @@
 @import "./blocks/social-list.scss";
 @import "./blocks/foter-nav.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/developers.scss";
+
+/* Сторонние библиотеки */
+@import "../vendor/nouislider/nouislider.css";

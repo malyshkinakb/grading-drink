@@ -1,0 +1,38 @@
+.developers {
+  margin: 0 auto;
+  padding: 20px 20px 30px;
+}
+
+.developers__text {
+  font-family: $montserrat-regular;
+  color: $color-grey-base;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.developers__link {
+  text-decoration: none;
+  color: $color-grey-base;
+  display: flex;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 16px;
+    mask: url("../../images/icons/stack.svg#developers-icon");
+    background: $color-grey-base;
+    margin-left: 4px;
+  }
+
+  &:hover {
+    color: $color-base-primary;
+
+    &::after {
+      background: $color-base-primary;
+    }
+  }
+}

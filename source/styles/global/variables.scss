@@ -5,7 +5,7 @@ $mobile-width: 320px;
 $mobile-width-only: 767px;
 $tablet-width: 768px;
 $tablet-width-only: 1339px;
-$desktop-width: 1400px;
+$desktop-width: 1440px;
 
 /* Шрифты */
 $montserrat-regular: "Montserrat Regular", "Arial";
@@ -13,7 +13,9 @@ $montserrat-bold: "Montserrat Bold", "Arial";
 $montserrat-medium: "Montserrat  Medium", "Arial";
 $montserrat-semiBold: "Montserrat SemiBold", "Arial";
 
-/* Цвета */
+/* Основные цвета */
 $color-black-base: #333333;
 $color-base-primary: #7859cf;
 $color-white-base: #ffffff;
+$color-grey-base: #bdbdbd;
+$color-secondary-base: #f0ebff;

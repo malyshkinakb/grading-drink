@@ -1,0 +1,53 @@
+.contacts {
+  font-family: $montserrat-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-black-base;
+  font-style: normal;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-secondary-base;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+.contacts__title {
+  font-family: $montserrat-bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $color-base-primary;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts__adress {
+  margin: 0;
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../images/icons/stack.svg#adress-icon");
+  }
+}
+
+.contacts__phone {
+  text-decoration: none;
+  color: $color-black-base;
+  display: flex;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 16px;
+    background-image: url("../../images/icons/stack.svg#phone-icon");
+  }
+}

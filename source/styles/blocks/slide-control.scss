@@ -1,23 +1,40 @@
 .slide-control {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slide-control__button {
-  position: absolute;
   border: none;
-  background-color: transparent;
+  //background-color: transparent;
   padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: red;
+  width: 20px;
+  padding: 0 5px;
+
+  &--next {
+
+  }
 }
 
 .slide-control__button::before {
   content: "";
   display: block;
+  position: absolute;
   cursor: pointer;
-  min-width: 12px;
-  min-height: 12px;
+  width: 12px;
+  height: 12px;
   border-top: 2px solid #7859cf;
   border-right: 2px solid #7859cf;
   transform: rotate(225deg);
+  box-sizing: border-box;
 }
 
 .slide-control__button--next::before {

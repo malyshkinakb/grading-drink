@@ -14,14 +14,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1400px;
+    width: 1440px;
     padding: 0 40px;
+  }
+}
+
+.catalog__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
 .catalog__bage {
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .catalog__title {

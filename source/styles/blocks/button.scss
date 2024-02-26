@@ -5,4 +5,9 @@
   background-color: $color-base-primary;
   color: $color-white-base;
   padding: 8px 20px;
+
+  &--reset {
+    background-color: $color-white-base;
+    color: $color-base-primary;
+  }
 }
